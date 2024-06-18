@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ICDS</string>
+    <string name="title_activity_layout_manager">LayoutManagerActivity</string>
+</resources>

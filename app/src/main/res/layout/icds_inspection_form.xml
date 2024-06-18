@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Name of the Visitor -->
+    <TextView
+        android:id="@+id/labelVisitorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name of the Visitor:"
+        app:layout_constraintEnd_toStartOf="@id/visitorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/visitorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelVisitorName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"/>
+
+    <!-- Designation -->
+    <TextView
+        android:id="@+id/labelDesignation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Designation:"
+        app:layout_constraintEnd_toStartOf="@id/designation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/visitorName"
+        android:layout_margin="8dp"/>
+
+    <Spinner
+        android:id="@+id/designation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelDesignation"
+        app:layout_constraintTop_toBottomOf="@id/visitorName"
+        android:layout_margin="8dp"/>
+
+    <!-- Project name -->
+    <TextView
+        android:id="@+id/labelProjectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Project name:"
+        app:layout_constraintEnd_toStartOf="@id/projectName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/designation"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/projectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelProjectName"
+        app:layout_constraintTop_toBottomOf="@id/designation"
+        android:layout_margin="8dp"/>
+
+    <!-- AWC Image -->
+    <TextView
+        android:id="@+id/labelAwcImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWC Image:"
+        app:layout_constraintEnd_toStartOf="@id/uploadButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/projectName"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwcImage"
+        app:layout_constraintTop_toBottomOf="@id/projectName"
+        android:layout_margin="8dp"/>
+
+    <!-- AWC name -->
+    <TextView
+        android:id="@+id/labelAwcName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWC name:"
+        app:layout_constraintEnd_toStartOf="@id/awcName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uploadButton"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/awcName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwcName"
+        app:layout_constraintTop_toBottomOf="@id/uploadButton"
+        android:layout_margin="8dp"/>
+
+    <!-- AWC Code -->
+    <TextView
+        android:id="@+id/labelAwcCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWC Code:"
+        app:layout_constraintEnd_toStartOf="@id/awcCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awcName"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/awcCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwcCode"
+        app:layout_constraintTop_toBottomOf="@id/awcName"
+        android:layout_margin="8dp"/>
+
+    <!-- AWC Open -->
+    <TextView
+        android:id="@+id/labelAwcOpen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWC Open:"
+        app:layout_constraintEnd_toStartOf="@id/awcOpenCheckBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awcCode"
+        android:layout_margin="8dp"/>
+
+    <CheckBox
+        android:id="@+id/awcOpenCheckBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwcOpen"
+        app:layout_constraintTop_toBottomOf="@id/awcCode"
+        android:layout_margin="8dp"/>
+
+    <!-- AWW name -->
+    <TextView
+        android:id="@+id/labelAwwName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWW name:"
+        app:layout_constraintEnd_toStartOf="@id/awwName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awcOpenCheckBox"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/awwName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwwName"
+        app:layout_constraintTop_toBottomOf="@id/awcOpenCheckBox"
+        android:layout_margin="8dp"/>
+
+    <!-- AWH name -->
+    <TextView
+        android:id="@+id/labelAwhName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWH name:"
+        app:layout_constraintEnd_toStartOf="@id/awhName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awwName"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/awhName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwhName"
+        app:layout_constraintTop_toBottomOf="@id/awwName"
+        android:layout_margin="8dp"/>
+
+    <!-- AWW AWH Present -->
+    <TextView
+        android:id="@+id/labelAwwAwhPresent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWW AWH Present:"
+        app:layout_constraintEnd_toStartOf="@id/awwAwhPresentGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awhName"
+        android:layout_margin="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/awwAwhPresentGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwwAwhPresent"
+        app:layout_constraintTop_toBottomOf="@id/awhName"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/bothPresentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Both are Present" />
+
+        <RadioButton
+            android:id="@+id/onlyAwwPresentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only AWW Present" />
+
+        <RadioButton
+            android:id="@+id/onlyAwhPresentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Only AWH Present" />
+    </RadioGroup>
+
+    <!-- AWW Mobile No -->
+    <TextView
+        android:id="@+id/labelAwwMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AWW Mobile No:"
+        app:layout_constraintEnd_toStartOf="@id/awwMobile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awwAwhPresentGroup"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/awwMobile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Mandatory Field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAwwMobile"
+        app:layout_constraintTop_toBottomOf="@id/awwAwhPresentGroup"
+        android:layout_margin="8dp"/>
+
+    <!-- Aadhar Verification -->
+    <TextView
+        android:id="@+id/labelAadharVerification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aadhar Verified:"
+        app:layout_constraintEnd_toStartOf="@id/aadharVerificationGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/awwMobile"
+        android:layout_margin="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/aadharVerificationGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/labelAadharVerification"
+        app:layout_constraintTop_toBottomOf="@id/awwMobile"
+        android:layout_margin="8dp">
+
+        <RadioButton
+            android:id="@+id/bothVerifiedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified for both AWW and AWH" />
+
+        <RadioButton
+            android:id="@+id/onlyAwwVerifiedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified Only AWW" />
+
+        <RadioButton
+            android:id="@+id/onlyAwhVerifiedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verified only AWH" />
+    </RadioGroup>
+
+    <!-- Submit and Cancel Buttons -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/aadharVerificationGroup"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        android:layout_margin="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
