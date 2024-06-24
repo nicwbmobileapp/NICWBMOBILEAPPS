@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Whether district is under Saksham Anganwadi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether district is under Saksham Anganwadi (For Murshidabad /Birbhum/ Nadia/Maldah/Dakshin Dinajpur)" />
+        <RadioGroup
+            android:id="@+id/rgSakshamAnganwadi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbSakshamYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/rbSakshamNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Name of the project (Block / Municipality) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of the project (Block / Municipality)" />
+        <EditText
+            android:id="@+id/etProjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter project name" />
+
+        <!-- Name of Gram Panchayat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Gram Panchayat" />
+        <Spinner
+            android:id="@+id/spinnerGramPanchayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gram_panchayat_array" />
+
+        <!-- Distance to Nearest Health Centre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance to Nearest Health Centre" />
+        <RadioGroup
+            android:id="@+id/rgHealthCentreDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbLessThan500Mtrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;500 Mtrs" />
+            <RadioButton
+                android:id="@+id/rbMoreThan500Mtrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&gt;500 Mtrs"/>
+            <RadioButton
+                android:id="@+id/rbMoreThan1Kms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&gt;1 Kms" />
+        </RadioGroup>
+
+        <!-- Name of AWC -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of AWC" />
+        <EditText
+            android:id="@+id/etAWCName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter AWC name" />
+
+        <!-- AWC Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AWC Code" />
+        <EditText
+            android:id="@+id/etAWCCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter AWC code" />
+
+        <!-- Whether AWW in position -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether AWW in position" />
+        <RadioGroup
+            android:id="@+id/rgAWWPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbAWWYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/rbAWWNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether AWH in position -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether AWH in position" />
+        <RadioGroup
+            android:id="@+id/rgAWHPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbAWHYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/rbAWHNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether this AWC is in main charge of AWW -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether this AWC is in main charge of AWW" />
+        <RadioGroup
+            android:id="@+id/rgAWCMainCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbAWCMainChargeYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/rbAWCMainChargeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Mobile Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number" />
+        <EditText
+            android:id="@+id/etMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter mobile number"
+            android:inputType="phone" />
+
+        <!-- Ownership of Building -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ownership of Building" />
+        <Spinner
+            android:id="@+id/spinnerBuildingOwnership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/building_ownership_array" />
+
+        <!-- Building Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Building Type" />
+        <Spinner
+            android:id="@+id/spinnerBuildingType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/building_type_array" />
+
+        <!-- Total Land Available within premises (in decimal) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Land Available within premises (in decimal)" />
+        <EditText
+            android:id="@+id/etLandAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter land available"
+            android:inputType="numberDecimal" />
+
+        <!-- Whether land is registered in favour of government -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether land is registered in favour of government" />
+        <RadioGroup
+            android:id="@+id/rgLandRegistered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbLandRegisteredYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/rbLandRegisteredNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Name of Scheme (For Construction) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Scheme (For Construction)" />
+        <Spinner
+            android:id="@+id/spinnerScheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/scheme_array" />
+
+        <!-- Date of Construction of Building -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Construction of Building" />
+        <EditText
+            android:id="@+id/etConstructionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter construction date"
+            android:inputType="date" />
+
+        <!-- Type of Building -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Building" />
+        <Spinner
+            android:id="@+id/spinnerBuildingModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/building_model_array" />
+
+        <!-- Type of Drinking Water -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Drinking Water" />
+        <Spinner
+            android:id="@+id/spinnerDrinkingWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/drinking_water_array" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <!-- android:onClick="insertData_awc_infrastructural_profile1" -->
+
+    </LinearLayout>
+</ScrollView>

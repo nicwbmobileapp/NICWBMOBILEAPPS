@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Drinking Water Facility -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drinking Water Facility Available Within Premises:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_drinking_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes_drinking_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radio_no_drinking_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Facilities Available -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whether following Facilities Available:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_water_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Filter"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_ro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R.O"/>
+
+    <!-- Source of Funds -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Source of Funds for Water Facility:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_water_funds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Water Availed from Outside Sources -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Water Availed from Outside Sources:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_pond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pond"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stream"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_rivulet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rivulet"/>
+
+    <!-- Distance of Water Facility -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance of Water Facility from AWC Premises:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_distance_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_lt_50m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="'lt;'50 m"/>
+
+        <RadioButton
+            android:id="@+id/radio_gt_50m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">50 m"/>
+    </RadioGroup>
+
+    <!-- Toilet Structure -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toilet Structure:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_toilet_structure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_kuccha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kuccha"/>
+
+        <RadioButton
+            android:id="@+id/radio_pucca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pucca"/>
+    </RadioGroup>
+
+    <!-- Toilet Condition -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toilet Condition:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinner_toilet_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Type of Toilet -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type of Toilet:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_pit_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pit Type"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_indian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indian"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_western"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Western"/>
+
+    <!-- Features of Toilet -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features of Toilet Available within Premises:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_toilet_features"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes_toilet_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radio_no_toilet_features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Features of Toilet: Whether Functional -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features of Toilet: Whether Functional:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_toilet_functional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes_toilet_functional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radio_no_toilet_functional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Features of Toilet: Whether Running Water Facility -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features of Toilet: Whether Running Water Facility Available:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_running_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes_running_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+        <RadioButton
+            android:id="@+id/radio_no_running_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+
+    <!-- Features of Toilet: Whether Tap Installed -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Features of Toilet: Whether Tap is Installed:"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/radio_tap_installed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_yes_tap_installed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"/>
+
+    </RadioGroup>
+</LinearLayout>

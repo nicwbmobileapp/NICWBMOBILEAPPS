@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Stock Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How long will the stock in Musur dal last?"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinner_stock_duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/stock_duration_array" />
+
+        <!-- Feeding Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Children found to be spot-fed:"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_children_spotfed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of women receiving spot-feeding:"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_women_spotfeeding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <!-- AWC Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the AWC a Sishu Aloy?"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/radiogroup_sishu_aloy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radiobutton_sishu_aloy_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radiobutton_sishu_aloy_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Theme based ECCE curriculum followed?"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:id="@+id/radiogroup_ecce_curriculum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radiobutton_ecce_curriculum_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+            <RadioButton
+                android:id="@+id/radiobutton_ecce_curriculum_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Activity Records -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Supushti Diwas held in last 6 months as per register (Please write if no register is found):"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_supushti_diwas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Annaprashan Divas celebrated regularly?"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_annaprashan_divas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of visits by higher officials / CDPO in last 6 months:"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_visits_higher_officials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of visits by Supervisors in last 6 months:"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_visits_supervisors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <!-- Additional Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks:"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/edittext_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- No Of Children in the Age group (6m-6 yrs) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Of Children in the Age group (6m-6 yrs)" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of children aged 6 months to 6 years" />
+
+        <!-- No of Pregnant women -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of Pregnant women" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of pregnant women" />
+
+        <!-- No of Lactating Mother -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of Lactating Mother" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of lactating mothers" />
+
+        <!-- Total Number of Adolescent Girls -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Number of Adolescent Girls" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter total number of adolescent girls" />
+
+        <!-- Is growth Chart available in AWC and plotting into date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is growth Chart available in AWC and plotting into date" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Indicate if growth chart is available and being updated" />
+
+        <!-- Whether they are any SUW children in the AWC register -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether they are any SUW children in the AWC register" />
+        <EditText
+            style="@style/EditTextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Indicate if there are any severely underweight children in AWC" />
+
+        <!-- Whether AWC is housed in own building -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether AWC is housed in own building" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Is electricity connection available or not -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is electricity connection available or not" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether AWC has toilet within / adjacent to the building -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether AWC has toilet within / adjacent to the building" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Is the Toilet fit for house -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the Toilet fit for house" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether AWC has its own drinking water source -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether AWC has its own drinking water source" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Type of water installation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of water installation" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/water_installation_types" />
+
+        <!-- Source of water -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source of water" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/water_sources" />
+
+        <!-- Is the Diet Chart displayed -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the Diet Chart displayed" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Is food being cooked as per diet chart -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is food being cooked as per diet chart" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Brand name of Mustard oil used -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand name of Mustard oil used" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/mustard_oil_brands" />
+
+        <!-- Brand name of Iodized Salt used -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand name of Iodized Salt used" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/iodized_salt_brands" />
+
+        <!-- Is Musur dal available in small grain size -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Musur dal available in small grain size" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Are food-grains stored in container -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are food-grains stored in container" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether correct stock of all food items is available -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether correct stock of all food items is available" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Whether correct stock of all food items is available"/>
+
+        <!-- Is separate kitchen shed available -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is separate kitchen shed available" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether LPG connection is available -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether LPG connection is available" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Whether kitchen is clean -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whether kitchen is clean" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- Condition of store room -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condition of store room" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/store_room_conditions" />
+
+        <!-- How long will the stock of rice last -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How long will the stock of rice last" />
+
+        <Spinner
+            style="@style/SpinnerLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/rice_stock_duration" />
+
+    </LinearLayout>
+</ScrollView>
