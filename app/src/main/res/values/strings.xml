@@ -1,4 +1,99 @@
 <resources>
     <string name="app_name">ICDS</string>
     <string name="title_activity_layout_manager">LayoutManagerActivity</string>
+
+    <string name="app_name1">ICDS Inspection</string>
+
+    <!-- Arrays for Spinner elements -->
+    <string-array name="water_installation_types">
+        <item>Tube-well</item>
+        <item>Tap water</item>
+        <item>Submersible</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="water_sources">
+        <item>Solar Power Tank</item>
+        <item>Jal Jeevan Mission</item>
+        <item>Electricity Operated</item>
+    </string-array>
+
+    <string-array name="mustard_oil_brands">
+        <item>Brand A</item>
+        <item>Brand B</item>
+        <item>Brand C</item>
+    </string-array>
+
+    <string-array name="iodized_salt_brands">
+        <item>Brand X</item>
+        <item>Brand Y</item>
+        <item>Brand Z</item>
+    </string-array>
+
+    <string-array name="store_room_conditions">
+        <item>Clean</item>
+        <item>Unclean</item>
+        <item>Needs Repair</item>
+        <item>Store room Not available</item>
+    </string-array>
+
+    <string-array name="rice_stock_duration">
+        <item>Less than 7 days</item>
+        <item>7-15 days</item>
+        <item>16-22 days</item>
+        <item>23-30 days</item>
+        <item>More than 1 month</item>
+    </string-array>
+
+
+    <string-array name="stock_duration_array">
+        <item>Less Than 7 days</item>
+        <item>7-15 days</item>
+        <item>16-22 days</item>
+        <item>23-30 days</item>
+        <item>More than 1 Month</item>
+    </string-array>
+
+
+    <string-array name="gram_panchayat_array">
+        <item>Gram Panchayat 1</item>
+        <item>Gram Panchayat 2</item>
+        <item>Gram Panchayat 3</item>
+    </string-array>
+    <string-array name="building_ownership_array">
+        <item>Open Space</item>
+        <item>Own</item>
+        <item>Community</item>
+        <item>Co-Located</item>
+        <item>Panchayat</item>
+        <item>Rented</item>
+    </string-array>
+    <string-array name="building_type_array">
+        <item>Kuccha</item>
+        <item>Semi kaccha</item>
+        <item>Pacca</item>
+    </string-array>
+    <string-array name="scheme_array">
+        <item>RIDF</item>
+        <item>NREGA-Convergence</item>
+        <item>NSDP</item>
+        <item>BRGF</item>
+        <item>MPLAD</item>
+        <item>SCP/TSP</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="building_model_array">
+        <item>BALA Model</item>
+        <item>Child Friendly Decor</item>
+    </string-array>
+    <string-array name="drinking_water_array">
+        <item>Running Tap Water</item>
+        <item>Tube well</item>
+        <item>Time tap water</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_awc_infrastructural_profile1">awc_infrastructural_profile1</string>
+
+
 </resources>
+

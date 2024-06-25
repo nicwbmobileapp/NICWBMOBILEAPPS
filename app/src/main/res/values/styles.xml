@@ -9,5 +9,30 @@
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
 </style>
+
+        <!-- Base application theme -->
+
+        <!-- Style for RadioButton to increase touch target size -->
+        <style name="RadioButtonLarge">
+            <item name="android:padding">16dp</item>
+            <item name="android:minHeight">48dp</item>
+        </style>
+
+        <!-- Style for Spinner to increase touch target size -->
+        <style name="SpinnerLarge">
+            <item name="android:padding">16dp</item>
+            <item name="android:minHeight">48dp</item>
+        </style>
+        <!-- Style for EditText to increase touch target size -->
+        <style name="EditTextLarge">
+            <item name="android:padding">16dp</item>
+            <item name="android:minHeight">48dp</item>
+        </style>
+
+
 </resources>
+
+
+
+
 

@@ -43,7 +43,7 @@ import androidx.appcompat.app.AppCompatActivity
 import org.json.JSONObject;
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity_old : AppCompatActivity() {
 
         // on below line we are creating
         // variable for email and password edit text.
@@ -107,8 +107,6 @@ class MainActivity : AppCompatActivity() {
         private lateinit var spinnerDrinkingWater: Spinner
         private lateinit var btnSubmit: Button
 
-        val jsonObject = JSONObject() // for json object creation
-
         // End Of UI components of awc_infrastructural_profile1
 
 
@@ -121,7 +119,8 @@ class MainActivity : AppCompatActivity() {
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.awc_infrastructural_profile1)
+
+
 
 
 
@@ -169,13 +168,8 @@ class MainActivity : AppCompatActivity() {
            btnSubmit.setOnClickListener {
                 print("Entered !!")
                 insertdataAwcInfrastructuralProfile1()
-
-               // push jsondata through retrofit
-
-
-
             }
-
+            setContentView(R.layout.awc_infrastructural_profile1)
         }
 
         // Getting values for awc_infrastructural_profile1
@@ -248,7 +242,7 @@ class MainActivity : AppCompatActivity() {
         }
                 private fun converter() {
 
-                // val jsonObject = JSONObject()
+                val jsonObject = JSONObject()
 
                  jsonObject.put("rgSakshamAnganwadi",rgSakshamAnganwadi)
                  jsonObject.put("rbSakshamYes",rbSakshamYes)
@@ -390,7 +384,7 @@ class MainActivity : AppCompatActivity() {
                 // finish to finish our main activity.
                 finish()
             }*/
-            val i = Intent(this@MainActivity, awc_infrastructural_profile1::class.java)
+            val i = Intent(this@MainActivity_old, awc_infrastructural_profile1::class.java)
             startActivity(i)
 
             // on below line we are calling
