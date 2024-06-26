@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".icds_inspection_form2"
+            android:name=".awc_infrastructural_profile2"
             android:exported="true"
             android:theme="@style/AppTheme" />
         <!--
