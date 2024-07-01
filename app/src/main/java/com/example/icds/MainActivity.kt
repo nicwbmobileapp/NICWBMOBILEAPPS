@@ -123,6 +123,18 @@ class MainActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.awc_infrastructural_profile1)
 
+            // checking internet connection
+
+            if (NetworkUtils.isNetworkAvailable(this)) {
+                // Proceed with network operations
+               // fetchDataFromServer()
+            } else {
+                // Handle no internet connection
+                Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show()
+                return
+            }
+
+
 
 
             // Initialize UI components of awc_infrastructural_profile1
